@@ -97,7 +97,7 @@ namespace MySQL_Output_Generator
             if (conn != null && conn.State == ConnectionState.Open) return;
             try
             {
-                string connectionString = $"server={txtServer.Text};user id={txtPassword.Text};password={txtPassword.Text};";
+                string connectionString = $"server={txtServer.Text};user id={txtRoot.Text};password={txtPassword.Text};";
                 conn = new MySqlConnection(connectionString);
                 conn.Open();
 
