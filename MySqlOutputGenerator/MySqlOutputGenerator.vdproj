@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1572A62E4E3B48C882E51BB6E20E0C76"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_37E5F78E4F774F953F60BAE5053821A6"
         "OwnerKey" = "8:_A816A9A478315BEC0F5C65426B3EB6E2"
         "MsmSig" = "8:_UNDEFINED"
@@ -57,6 +51,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_649116097A6D476D94E16CBE6875065C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_743F4C8C9124466899D468E992BEA53D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_793D485F9DE74940902B620CC1E97B89"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7AE6016FB71442D697AF726129BBE546"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -69,19 +81,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_943917DCFA0E45F49E5680398833D3E5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A816A9A478315BEC0F5C65426B3EB6E2"
         "OwnerKey" = "8:_7AE6016FB71442D697AF726129BBE546"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B36D981D80684BBABD5DE7F6BE32E1A4"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B390F3EBA48442229B5466FE552B2AF5"
+        "MsmKey" = "8:_AEE5DD4E3DFB444BA3166F5E744A8E7C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -105,13 +117,25 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E6E8C13302694C0BA106D4537B60D034"
+        "MsmKey" = "8:_D372B22D3584463DB04F0982EED1274F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F6F06182353340DC892C02E271BB87C6"
+        "MsmKey" = "8:_F34AAA30EAC04469B74B6A20AF2F6220"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F78C5349913D43FF9BA6091EFFD257A7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F7C8B6875B284B5787F0091A5EB8729E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -220,26 +244,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1572A62E4E3B48C882E51BB6E20E0C76"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Inter\\static\\Inter-Bold.ttf"
-            "TargetName" = "8:Inter-Bold.ttf"
-            "Tag" = "8:"
-            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:5"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_37E5F78E4F774F953F60BAE5053821A6"
             {
             "AssemblyRegister" = "3:1"
@@ -333,6 +337,66 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_649116097A6D476D94E16CBE6875065C"
+            {
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-Light.ttf"
+            "TargetName" = "8:Inter-Light.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_743F4C8C9124466899D468E992BEA53D"
+            {
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-Medium.ttf"
+            "TargetName" = "8:Inter-Medium.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_793D485F9DE74940902B620CC1E97B89"
+            {
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-SemiBold.ttf"
+            "TargetName" = "8:Inter-SemiBold.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7C3C353AB02D42B0B2BA2E60AA268A65"
             {
             "SourcePath" = "8:..\\MySQL Output Generator\\logo (1).ico"
@@ -349,6 +413,26 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_943917DCFA0E45F49E5680398833D3E5"
+            {
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-Bold.ttf"
+            "TargetName" = "8:Inter-Bold.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -384,30 +468,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B36D981D80684BBABD5DE7F6BE32E1A4"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AEE5DD4E3DFB444BA3166F5E744A8E7C"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Inter\\static\\Inter-Medium.ttf"
-            "TargetName" = "8:Inter-Medium.ttf"
-            "Tag" = "8:"
-            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:5"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B390F3EBA48442229B5466FE552B2AF5"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Inter\\static\\Inter-Regular.ttf"
-            "TargetName" = "8:Inter-Regular.ttf"
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-ExtraBold.ttf"
+            "TargetName" = "8:Inter-ExtraBold.ttf"
             "Tag" = "8:"
             "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
             "Condition" = "8:"
@@ -486,10 +550,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E6E8C13302694C0BA106D4537B60D034"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D372B22D3584463DB04F0982EED1274F"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Inter\\static\\Inter-SemiBold.ttf"
-            "TargetName" = "8:Inter-SemiBold.ttf"
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-Regular.ttf"
+            "TargetName" = "8:Inter-Regular.ttf"
             "Tag" = "8:"
             "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
             "Condition" = "8:"
@@ -506,10 +570,50 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F6F06182353340DC892C02E271BB87C6"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F34AAA30EAC04469B74B6A20AF2F6220"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Inter\\static\\Inter-Light.ttf"
-            "TargetName" = "8:Inter-Light.ttf"
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-Black.ttf"
+            "TargetName" = "8:Inter-Black.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F78C5349913D43FF9BA6091EFFD257A7"
+            {
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-ExtraLight.ttf"
+            "TargetName" = "8:Inter-ExtraLight.ttf"
+            "Tag" = "8:"
+            "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F7C8B6875B284B5787F0091A5EB8729E"
+            {
+            "SourcePath" = "8:..\\MySQL Output Generator\\Fonts\\Inter-Thin.ttf"
+            "TargetName" = "8:Inter-Thin.ttf"
             "Tag" = "8:"
             "Folder" = "8:_6E4BD73D62C346B1ABCB8FBEE390E87F"
             "Condition" = "8:"
@@ -594,7 +698,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:MySqlOutputGenerator"
         "ProductCode" = "8:{C9EF481C-13C9-49E5-9F30-B20D988B3124}"
-        "PackageCode" = "8:{94255BF5-92DC-4383-A712-4069DEA93DF8}"
+        "PackageCode" = "8:{8AB5D5E6-5F87-4C4E-A34A-6D46A69CDF2B}"
         "UpgradeCode" = "8:{6BC6A2A0-A67B-4FC3-8ABF-7A255540D2FC}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"

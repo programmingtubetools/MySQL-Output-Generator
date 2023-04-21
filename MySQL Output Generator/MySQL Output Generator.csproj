@@ -73,6 +73,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Fonts\Inter-Black.ttf" />
+    <None Include="Fonts\Inter-Bold.ttf" />
+    <None Include="Fonts\Inter-ExtraBold.ttf" />
+    <None Include="Fonts\Inter-ExtraLight.ttf" />
+    <None Include="Fonts\Inter-Light.ttf" />
+    <None Include="Fonts\Inter-Medium.ttf" />
+    <None Include="Fonts\Inter-Regular.ttf" />
+    <None Include="Fonts\Inter-SemiBold.ttf" />
+    <None Include="Fonts\Inter-Thin.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
