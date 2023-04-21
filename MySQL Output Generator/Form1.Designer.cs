@@ -177,7 +177,7 @@
             this.codeTextBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codeTextBox.Location = new System.Drawing.Point(21, 225);
             this.codeTextBox.Name = "codeTextBox";
-            this.codeTextBox.Size = new System.Drawing.Size(1046, 211);
+            this.codeTextBox.Size = new System.Drawing.Size(1046, 124);
             this.codeTextBox.TabIndex = 3;
             this.codeTextBox.Text = "";
             this.codeTextBox.WordWrap = false;
@@ -189,7 +189,7 @@
             // 
             this.lblQueryStatus.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueryStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
-            this.lblQueryStatus.Location = new System.Drawing.Point(21, 439);
+            this.lblQueryStatus.Location = new System.Drawing.Point(18, 352);
             this.lblQueryStatus.Name = "lblQueryStatus";
             this.lblQueryStatus.Size = new System.Drawing.Size(1046, 23);
             this.lblQueryStatus.TabIndex = 8;
@@ -200,7 +200,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 479);
+            this.label8.Location = new System.Drawing.Point(14, 399);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 19);
             this.label8.TabIndex = 9;
@@ -211,7 +211,7 @@
             this.lstOutput.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstOutput.GridLines = true;
             this.lstOutput.HideSelection = false;
-            this.lstOutput.Location = new System.Drawing.Point(21, 513);
+            this.lstOutput.Location = new System.Drawing.Point(18, 433);
             this.lstOutput.Name = "lstOutput";
             this.lstOutput.Size = new System.Drawing.Size(1046, 199);
             this.lstOutput.TabIndex = 10;
@@ -222,7 +222,7 @@
             // 
             this.btnExecuteQuery.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExecuteQuery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(140)))), ((int)(((byte)(233)))));
-            this.btnExecuteQuery.Location = new System.Drawing.Point(933, 469);
+            this.btnExecuteQuery.Location = new System.Drawing.Point(930, 389);
             this.btnExecuteQuery.Name = "btnExecuteQuery";
             this.btnExecuteQuery.Size = new System.Drawing.Size(134, 38);
             this.btnExecuteQuery.TabIndex = 8;
@@ -234,7 +234,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 744);
+            this.label9.Location = new System.Drawing.Point(14, 664);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(60, 19);
             this.label9.TabIndex = 11;
@@ -245,7 +245,7 @@
             this.cboOutputFolder.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboOutputFolder.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboOutputFolder.FormattingEnabled = true;
-            this.cboOutputFolder.Location = new System.Drawing.Point(83, 741);
+            this.cboOutputFolder.Location = new System.Drawing.Point(80, 661);
             this.cboOutputFolder.Name = "cboOutputFolder";
             this.cboOutputFolder.Size = new System.Drawing.Size(162, 27);
             this.cboOutputFolder.TabIndex = 12;
@@ -255,7 +255,7 @@
             this.lnkCreateOutputFolder.AutoSize = true;
             this.lnkCreateOutputFolder.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkCreateOutputFolder.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(140)))), ((int)(((byte)(233)))));
-            this.lnkCreateOutputFolder.Location = new System.Drawing.Point(251, 744);
+            this.lnkCreateOutputFolder.Location = new System.Drawing.Point(248, 664);
             this.lnkCreateOutputFolder.Name = "lnkCreateOutputFolder";
             this.lnkCreateOutputFolder.Size = new System.Drawing.Size(115, 19);
             this.lnkCreateOutputFolder.TabIndex = 13;
@@ -267,7 +267,7 @@
             // 
             this.btnSaveOutput.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(128)))), ((int)(((byte)(40)))));
-            this.btnSaveOutput.Location = new System.Drawing.Point(747, 774);
+            this.btnSaveOutput.Location = new System.Drawing.Point(744, 694);
             this.btnSaveOutput.Name = "btnSaveOutput";
             this.btnSaveOutput.Size = new System.Drawing.Size(134, 38);
             this.btnSaveOutput.TabIndex = 14;
@@ -279,7 +279,7 @@
             // 
             this.btnOutputFolder.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOutputFolder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(140)))), ((int)(((byte)(233)))));
-            this.btnOutputFolder.Location = new System.Drawing.Point(887, 774);
+            this.btnOutputFolder.Location = new System.Drawing.Point(884, 694);
             this.btnOutputFolder.Name = "btnOutputFolder";
             this.btnOutputFolder.Size = new System.Drawing.Size(177, 38);
             this.btnOutputFolder.TabIndex = 15;
@@ -290,7 +290,7 @@
             // txtOutputLabel
             // 
             this.txtOutputLabel.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOutputLabel.Location = new System.Drawing.Point(582, 741);
+            this.txtOutputLabel.Location = new System.Drawing.Point(579, 661);
             this.txtOutputLabel.Name = "txtOutputLabel";
             this.txtOutputLabel.Size = new System.Drawing.Size(485, 27);
             this.txtOutputLabel.TabIndex = 9;
@@ -300,7 +300,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(463, 744);
+            this.label5.Location = new System.Drawing.Point(460, 664);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 19);
             this.label5.TabIndex = 8;
@@ -310,7 +310,7 @@
             // label7
             // 
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(45)))), ((int)(((byte)(85)))));
-            this.label7.Location = new System.Drawing.Point(18, 774);
+            this.label7.Location = new System.Drawing.Point(15, 694);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(545, 38);
             this.label7.TabIndex = 16;
@@ -324,7 +324,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1079, 824);
+            this.ClientSize = new System.Drawing.Size(1079, 747);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtOutputLabel);
             this.Controls.Add(this.label5);
