@@ -142,12 +142,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_50A46B34B1143B26A5D3E6E671B66526"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_7AE6016FB71442D697AF726129BBE546"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -181,6 +175,12 @@
         "OwnerKey" = "8:_4CFBEBAF5301C2FB4F9A99B47AA6AC41"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_50A46B34B1143B26A5D3E6E671B66526"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -199,6 +199,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -215,6 +231,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -696,9 +728,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:MySqlOutputGenerator"
+        "ProductName" = "8:MySql Output Generator"
         "ProductCode" = "8:{C9EF481C-13C9-49E5-9F30-B20D988B3124}"
-        "PackageCode" = "8:{8AB5D5E6-5F87-4C4E-A34A-6D46A69CDF2B}"
+        "PackageCode" = "8:{56CE45B7-4217-4E1B-9D5E-4FCE23F7350E}"
         "UpgradeCode" = "8:{6BC6A2A0-A67B-4FC3-8ABF-7A255540D2FC}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -708,8 +740,8 @@
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Gautam Giri"
         "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
-        "Title" = "8:MySqlOutputGenerator"
+        "ARPHELPLINK" = "8:https://gautamgiri-dev.github.io/mysql-output-generator"
+        "Title" = "8:MySql Output Generator"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Gautam Giri"
         "Keywords" = "8:"

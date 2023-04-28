@@ -62,7 +62,7 @@
             this.label1.Font = new System.Drawing.Font("Inter", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(365, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 33);
+            this.label1.Size = new System.Drawing.Size(438, 41);
             this.label1.TabIndex = 0;
             this.label1.Text = "MySQL Output Generator";
             // 
@@ -111,7 +111,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(629, 48);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(234, 26);
+            this.txtPassword.Size = new System.Drawing.Size(234, 30);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
@@ -121,7 +121,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(540, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 19);
+            this.label4.Size = new System.Drawing.Size(103, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Password:";
             // 
@@ -129,7 +129,7 @@
             // 
             this.txtRoot.Location = new System.Drawing.Point(372, 48);
             this.txtRoot.Name = "txtRoot";
-            this.txtRoot.Size = new System.Drawing.Size(149, 26);
+            this.txtRoot.Size = new System.Drawing.Size(149, 30);
             this.txtRoot.TabIndex = 3;
             this.txtRoot.Text = "root";
             // 
@@ -138,7 +138,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(305, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 19);
+            this.label3.Size = new System.Drawing.Size(74, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "UserId:";
             // 
@@ -146,7 +146,7 @@
             // 
             this.txtServer.Location = new System.Drawing.Point(96, 48);
             this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(184, 26);
+            this.txtServer.Size = new System.Drawing.Size(184, 30);
             this.txtServer.TabIndex = 1;
             this.txtServer.Text = "localhost";
             // 
@@ -155,7 +155,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(29, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 19);
+            this.label2.Size = new System.Drawing.Size(74, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Server:";
             // 
@@ -165,7 +165,7 @@
             this.label6.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(17, 203);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 19);
+            this.label6.Size = new System.Drawing.Size(73, 24);
             this.label6.TabIndex = 2;
             this.label6.Text = "Query:";
             // 
@@ -202,7 +202,7 @@
             this.label8.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(14, 399);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 19);
+            this.label8.Size = new System.Drawing.Size(81, 24);
             this.label8.TabIndex = 9;
             this.label8.Text = "Output:";
             // 
@@ -236,7 +236,7 @@
             this.label9.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(14, 664);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 19);
+            this.label9.Size = new System.Drawing.Size(75, 24);
             this.label9.TabIndex = 11;
             this.label9.Text = "Folder:";
             // 
@@ -247,7 +247,7 @@
             this.cboOutputFolder.FormattingEnabled = true;
             this.cboOutputFolder.Location = new System.Drawing.Point(80, 661);
             this.cboOutputFolder.Name = "cboOutputFolder";
-            this.cboOutputFolder.Size = new System.Drawing.Size(162, 27);
+            this.cboOutputFolder.Size = new System.Drawing.Size(162, 32);
             this.cboOutputFolder.TabIndex = 12;
             // 
             // lnkCreateOutputFolder
@@ -257,7 +257,7 @@
             this.lnkCreateOutputFolder.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(140)))), ((int)(((byte)(233)))));
             this.lnkCreateOutputFolder.Location = new System.Drawing.Point(248, 664);
             this.lnkCreateOutputFolder.Name = "lnkCreateOutputFolder";
-            this.lnkCreateOutputFolder.Size = new System.Drawing.Size(115, 19);
+            this.lnkCreateOutputFolder.Size = new System.Drawing.Size(142, 24);
             this.lnkCreateOutputFolder.TabIndex = 13;
             this.lnkCreateOutputFolder.TabStop = true;
             this.lnkCreateOutputFolder.Text = "+ Create New";
@@ -292,7 +292,7 @@
             this.txtOutputLabel.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOutputLabel.Location = new System.Drawing.Point(579, 661);
             this.txtOutputLabel.Name = "txtOutputLabel";
-            this.txtOutputLabel.Size = new System.Drawing.Size(485, 27);
+            this.txtOutputLabel.Size = new System.Drawing.Size(485, 32);
             this.txtOutputLabel.TabIndex = 9;
             this.txtOutputLabel.Visible = false;
             // 
@@ -302,7 +302,7 @@
             this.label5.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(460, 664);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 19);
+            this.label5.Size = new System.Drawing.Size(138, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Output Label:";
             this.label5.Visible = false;
@@ -321,7 +321,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1079, 747);
@@ -342,7 +342,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;

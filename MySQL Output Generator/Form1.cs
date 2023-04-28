@@ -117,42 +117,57 @@ namespace MySQL_Output_Generator
                 conn.Close();
         }
 
-        private void ExecuteQuery(string query)
+        private bool ExecuteQuery(string query)
         {
             
             void invokeOnOutput(Action action) => lstOutput.Invoke(action);
-
-            using (MySqlCommand command = new MySqlCommand(query, conn))
+            var isError = true;
+            try
             {
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                using (MySqlCommand command = new MySqlCommand(query, conn))
                 {
-
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    invokeOnOutput(new Action(() => lstOutput.Items.Clear()));
-
-                    invokeOnOutput(new Action(() => lstOutput.Columns.Clear()));
-                    invokeOnOutput(new Action(() => lstOutput.Items.Clear()));
-
-                    foreach (DataColumn col in dt.Columns)
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
-                        invokeOnOutput(new Action(() => lstOutput.Columns.Add(col.ColumnName)));
-                    }
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        invokeOnOutput(new Action(() => lstOutput.Items.Clear()));
 
-                    foreach (DataRow row in dt.Rows)
-                    {
-                        ListViewItem item = new ListViewItem(row[0].ToString());
+                        invokeOnOutput(new Action(() => lstOutput.Columns.Clear()));
+                        invokeOnOutput(new Action(() => lstOutput.Items.Clear()));
 
-                        for (int i = 1; i < dt.Columns.Count; i++)
+                        foreach (DataColumn col in dt.Columns)
                         {
-                            item.SubItems.Add(row[i].ToString());
+                            invokeOnOutput(new Action(() => lstOutput.Columns.Add(col.ColumnName)));
                         }
 
-                        invokeOnOutput(new Action(() => lstOutput.Items.Add(item)));
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            ListViewItem item = new ListViewItem(row[0].ToString());
+
+                            for (int i = 1; i < dt.Columns.Count; i++)
+                            {
+                                item.SubItems.Add(row[i].ToString());
+                            }
+
+                            invokeOnOutput(new Action(() => lstOutput.Items.Add(item)));
+                        }
                     }
                 }
+                isError = false;
             }
-            
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return isError;
         }
 
         private async void btnExecuteQuery_Click(object sender, EventArgs e)
@@ -172,11 +187,11 @@ namespace MySQL_Output_Generator
                 string query = codeTextBox.Text;
                 lblQueryStatus.Text = "Executing...";
                 lblQueryStatus.ForeColor = BLUE;
-                await Task.Run(() => ExecuteQuery(query)).ContinueWith((t) =>
-                {
-                    if (t.IsFaulted) throw t.Exception;
-                });
-                isError = false;
+                isError = await Task.Run<bool>(() => ExecuteQuery(query));
+            }
+            catch(MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch(InvalidOperationException ex)
             {
@@ -235,7 +250,7 @@ namespace MySQL_Output_Generator
             if (cboOutputFolder.SelectedIndex >= 0)
                 Process.Start(Properties.Settings.Default.OUTPUT_FOLDERS[cboOutputFolder.SelectedIndex].ToString());
         }
-        private void ListViewToAsciiTableImage(ListView listView, string outputPath, string outputLabel)
+        private void ListViewToAsciiTableImage(ListView listView, string outputPath, string query, string outputLabel, Action<Bitmap, int, int> callback = null)
         {
             int rowHeight = 30;
             int tableWidth = 0;
@@ -244,14 +259,14 @@ namespace MySQL_Output_Generator
             foreach(ColumnHeader col in listView.Columns)
             {
                 int width = TextRenderer.MeasureText(col.Text, listView.Font).Width;
-                columnWidths[col.Index] = width;
+                columnWidths[col.Index] = width + 20;
             }
 
             foreach (ListViewItem item in listView.Items)
             {
                 for (int i = 0; i < item.SubItems.Count; i++)
                 {
-                    int width = TextRenderer.MeasureText(item.SubItems[i].Text, listView.Font).Width;
+                    int width = TextRenderer.MeasureText(item.SubItems[i].Text, listView.Font).Width + 20;
                     columnWidths[i] = Math.Max(columnWidths[i], width);
                 }
             }
@@ -261,11 +276,13 @@ namespace MySQL_Output_Generator
                 tableWidth += columnWidths[i] + 20;
             }
 
-            var labelWidth = TextRenderer.MeasureText($"fig. {outputLabel}", listView.Font).Width;
-            columnWidths[columnWidths.Length - 1] = labelWidth;
-            tableWidth += labelWidth + 20;
+            //var labelWidth = TextRenderer.MeasureText($"fig. {outputLabel}", listView.Font).Width;
+            //columnWidths[columnWidths.Length - 1] = labelWidth;
+            //tableWidth += labelWidth + 40;
 
-            int tableHeight = Math.Min(400, (listView.Items.Count + 2) * rowHeight);
+            int tableHeight = (listView.Items.Count + 5) * rowHeight;
+
+            tableWidth = Math.Max(300, tableWidth);
 
             using (Bitmap bmp = new Bitmap(tableWidth, tableHeight))
             {
@@ -278,9 +295,25 @@ namespace MySQL_Output_Generator
 
                     int x = 10;
                     int y = 10;
+                    query = $"mysql > {query}";
+                    foreach (string c in query.Split(' '))
+                    {
+                        int w = TextRenderer.MeasureText(c, font).Width;
+                        g.DrawString(c.ToString(), new Font(font.FontFamily, font.Size, FontStyle.Bold), brush, new PointF(x, y));
+                        x += w;
+                        if(x + w >= tableWidth - 10)
+                        {
+                            y += rowHeight;
+                            x = 10;
+                        }
+                    }
+
+                    y += rowHeight;
+                    x = 10;
+
                     foreach (ColumnHeader column in listView.Columns)
                     {
-                        g.DrawString(column.Text, font, brush, new PointF(x, y));
+                        g.DrawString(column.Text, new Font(font.FontFamily, font.Size, FontStyle.Bold), brush, new PointF(x, y));
                         x += columnWidths[column.Index] + 20;
                     }
                     y += rowHeight;
@@ -299,15 +332,9 @@ namespace MySQL_Output_Generator
                         }
                         y += rowHeight;
                     }
-                    if(!string.IsNullOrEmpty(outputLabel))
-                    {
-                        x = 10;
-                        y += rowHeight;
-                        g.DrawString($"fig. {outputLabel}", font, brush, new RectangleF(x, y, columnWidths[columnWidths.Length - 1], rowHeight), new StringFormat() { Trimming = StringTrimming.EllipsisCharacter });
-                    }
-
                 }
 
+                callback?.Invoke(bmp, tableWidth, tableHeight);
                 bmp.Save(outputPath, ImageFormat.Png);
             }
         }
@@ -324,10 +351,25 @@ namespace MySQL_Output_Generator
                 Filter = "PNG files (*.png)|*.png"
             };
 
+            Action<Bitmap, int, int> onComplete = (bmp, tableWidth, tableHeight) =>
+            {
+                var frm = new Form();
+                frm.Width = tableWidth;
+                frm.Height = tableHeight;
+                var pictureBox = new PictureBox();
+                pictureBox.Width = tableWidth;
+                pictureBox.Height = tableHeight;
+                pictureBox.Image = bmp;
+                pictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
+                pictureBox.Dock = DockStyle.Fill;
+                frm.Controls.Add(pictureBox);
+                frm.ShowDialog(this);
+            };
+
             if(ofd.ShowDialog() == DialogResult.OK)
             {
                 var filename = ofd.FileName;
-                ListViewToAsciiTableImage(lstOutput, filename, txtOutputLabel.Text);
+                ListViewToAsciiTableImage(lstOutput, filename, codeTextBox.Text, txtOutputLabel.Text, null);
             }
         }
 
